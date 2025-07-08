@@ -4,31 +4,6 @@
   <listeners>
     <listener class-name="com.qa.neworbit.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="new orbit dashboard Test(failed)" verbose="4">
-    <classes>
-      <class name="com.qa.neworbit.tests.DashboardPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="TitleverifyDashboard"/>
-          <include name="NavigateToDashboardPage"/>
-          <include name="Dosearch"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.neworbit.tests.DashboardPageTest -->
-    </classes>
-  </test> <!-- new orbit dashboard Test(failed) -->
-  <test thread-count="5" parallel="tests" name="New orbit login Test(failed)" verbose="4">
-    <classes>
-      <class name="com.qa.neworbit.tests.LoginPageTest">
-        <methods>
-          <include name="Testlogin"/>
-          <include name="tearDown"/>
-          <include name="Title"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.qa.neworbit.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- New orbit login Test(failed) -->
   <test thread-count="5" parallel="tests" name="new orbit search Results Test(failed)" verbose="4">
     <classes>
       <class name="com.qa.neworbit.tests.SearchResultPageTest">
@@ -36,8 +11,6 @@
           <include name="selecthotel"/>
           <include name="tearDown"/>
           <include name="hotelcount"/>
-          <include name="titleverify"/>
-          <include name="navigate"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.neworbit.tests.SearchResultPageTest -->

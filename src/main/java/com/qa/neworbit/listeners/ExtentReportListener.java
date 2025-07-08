@@ -21,7 +21,7 @@ import static com.qa.neworbit.factory.PlaywrightFactory.takeScreenshot;
 public class ExtentReportListener implements ITestListener	{
 
 		private static final String OUTPUT_FOLDER = "./build/";
-		private static final String FILE_NAME = "NewOrbitTestExecutionReport.html";
+		private static final String FILE_NAME = "NewOrbitTestExecutionReport2.html";
 
 		private static ExtentReports extent = init();
 		public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();

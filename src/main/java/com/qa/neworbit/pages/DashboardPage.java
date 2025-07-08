@@ -1,8 +1,5 @@
 package com.qa.neworbit.pages;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 import com.microsoft.playwright.Page;
 
 public class DashboardPage {
@@ -12,7 +9,7 @@ public class DashboardPage {
 	
 	//1. String locators available on dashboard page.
 	private String datetoclick;
-	private String destination = "//input[@aria-owns='rc_select_0_list']";
+	private String destination = "(//input[@class='ant-select-selection-search-input'])[1]";
 	
 	private String destmatch = "//div[@class='ant-select-item ant-select-item-option']";
 	private String checkin = "//input[@id='checkin']";
@@ -28,7 +25,7 @@ public class DashboardPage {
 	//private String nationality = "//input[@aria-owns='rc_select_2_list']";
 	
 	private String date;
-	private String paxnationality = "//input[@id='rc_select_2']";
+	private String paxnationality = "(//input[@class='ant-select-selection-search-input'])[3]";
 	
 	private String searchbutton = "//button[@type='submit']";
 	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700']";
@@ -89,11 +86,11 @@ public class DashboardPage {
 		datetoclick = day;
 		date = "//td[@class='ant-picker-cell ant-picker-cell-in-view']/div[text()='" + datetoclick + "']";
 		System.out.println("Day want to search :" + datetoclick);
-		String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-		System.out.println("wait started at: " + timestamp);
-		page.waitForTimeout(20000);
-		String timestampnew = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-		System.out.println("Test started at: " + timestampnew);
+		//String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+		//System.out.println("wait started at: " + timestamp);
+		//page.waitForTimeout(20000);
+		//String timestampnew = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+		//System.out.println("Test started at: " + timestampnew);
 		page.fill(destination, City);
 		page.locator(destmatch).first().click();
 		//page.getByText("Dubai United Arab Emirates", new Page.GetByTextOptions().setExact(true)).click();

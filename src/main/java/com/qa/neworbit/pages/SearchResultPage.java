@@ -9,9 +9,11 @@ public class SearchResultPage {
 	
 	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700']";
 	
-	//private String filter ="//span[@class='ant-select-selection-item']//span[@class='f-w-600']";
+	//private String filter ="(//input[@type='search'])[3]";
+	//private String filteroption = "//div[@title='Refundable']//div";
 	
-	//private String filteroption = "//div[@class='rc-virtual-list-holder-inner']//div[@class='ant-select-item-option-content']//span[@class='f-w-600']";
+	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[1]";
+
 	
 	private String hotelname = "(//div[@class='booking-name-type ant-flex css-1v5z42l'])[1]/span";
 	private String initprice ="//div[@class='ant-col right-details-section css-1v5z42l']//div[@class='price-section']//span[@class='m-r-10']";
@@ -56,21 +58,24 @@ public class SearchResultPage {
 //			System.out.println("Filter clicked");
 //			page.locator(filteroption).first().click();
 //			System.out.println("filter option clicked");
-			String hname = page.locator(hotelname).first().textContent();
-			System.out.println("Selected hotel name : " + hname);
-			String hprice = page.locator(initprice).first().textContent();
-			System.out.println("Initial price : " + hprice );
-			String hcurrency = page.locator(currency).first().textContent();
-			System.out.println("Selected hotel price : " + hcurrency + " " + hprice);
+//			String hname = page.locator(hotelname).first().textContent();
+//		System.out.println("Selected hotel name : " + hname);
+//			String hprice = page.locator(initprice).first().textContent();
+//			System.out.println("Initial price : " + hprice );
+//			String hcurrency = page.locator(currency).first().textContent();
+//			System.out.println("Selected hotel price : " + hcurrency + " " + hprice);
 			//page.click(showrates);
-			
+			//page.click(fhotel);
+			//System.out.println("first hotel clicked");
 			//new popup opened
 			
 			Page page1 = page.waitForPopup(() -> {
-				
-				page.click(showrates);
+				System.out.println("inside the clause");
+				page.click(fhotel);
+				System.out.println("click on first hotel");
 			});
 			page1.waitForTimeout(20000);
+			System.out.println("waiting for noofrooms available");
 			page1.click(noofroom);
 			String availroom = page1.innerText(noofroom);
 			System.out.println("No of rooms available : " + availroom);
