@@ -106,10 +106,10 @@ public class DashboardPage {
 		System.out.println("Updated Current month and year :" + cMonth +" "+ cYear);
 		System.out.println(date);
 		page.click(date);
-		page.fill(paxnationality, Nationality);
+//		page.fill(paxnationality, Nationality);
 		//page.getByText("India", new Page.GetByTextOptions().setExact(true)).click();
 		
-		page.getByText(Nationality, new Page.GetByTextOptions().setExact(true)).click();
+//		page.getByText(Nationality, new Page.GetByTextOptions().setExact(true)).click();
 
 		page.click(searchbutton);		
 		return new SearchResultPage(page);

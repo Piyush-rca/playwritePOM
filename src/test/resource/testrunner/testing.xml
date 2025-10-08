@@ -21,7 +21,7 @@
         </classes>        
     </test>
     
-    -->
+    
     
     <test name="new orbit search Results Test">      
         <classes>  
@@ -29,4 +29,12 @@
         </classes>        
     </test>
 
+	-->
+	
+	<test name="new orbit hotel booking Test">      
+        <classes>  
+            <class name="com.qa.neworbit.tests.HotelAlldetailPageTest"/>
+        </classes>        
+    </test>
+	
 </suite>

@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.qa.neworbit.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="new orbit search Results Test(failed)" verbose="4">
+  <test thread-count="5" parallel="tests" name="new orbit hotel booking Test(failed)" verbose="4">
     <classes>
-      <class name="com.qa.neworbit.tests.SearchResultPageTest">
+      <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
         <methods>
-          <include name="selecthotel"/>
+          <include name="hotelbooking"/>
           <include name="tearDown"/>
-          <include name="hotelcount"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.neworbit.tests.SearchResultPageTest -->
+      </class> <!-- com.qa.neworbit.tests.HotelAlldetailPageTest -->
     </classes>
-  </test> <!-- new orbit search Results Test(failed) -->
+  </test> <!-- new orbit hotel booking Test(failed) -->
 </suite> <!-- Failed suite [MyNewOrbitTestSuit] -->

@@ -1,37 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-08T07:37:02 IST" name="Default suite" finished-at="2025-07-08T07:39:13 IST" duration-ms="130589">
+  <suite started-at="2025-10-08T16:50:36 IST" name="MyNewOrbitTestSuit" finished-at="2025-10-08T16:53:55 IST" duration-ms="199571">
     <groups>
     </groups>
-    <test started-at="2025-07-08T07:37:02 IST" name="Default test" finished-at="2025-07-08T07:39:13 IST" duration-ms="130589">
-      <class name="com.qa.neworbit.tests.SearchResultPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:37:02 IST" name="setup" finished-at="2025-07-08T07:37:27 IST" duration-ms="24751" status="PASS">
+    <test started-at="2025-10-08T16:50:36 IST" name="new orbit hotel booking Test" finished-at="2025-10-08T16:53:55 IST" duration-ms="199571">
+      <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:50:36 IST" name="setup" finished-at="2025-10-08T16:50:55 IST" duration-ms="19207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:37:27 IST" name="navigate" finished-at="2025-07-08T07:37:48 IST" duration-ms="21192" status="PASS">
+        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:50:55 IST" name="navigate" finished-at="2025-10-08T16:52:44 IST" duration-ms="108937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:37:48 IST" name="titleverify" finished-at="2025-07-08T07:37:48 IST" duration-ms="22" status="PASS">
+        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:53:08 IST" name="titleverify" finished-at="2025-10-08T16:53:08 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleverify -->
-        <test-method signature="hotelcount()[pri:3, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:37:48 IST" name="hotelcount" finished-at="2025-07-08T07:38:31 IST" duration-ms="42942" status="PASS">
+        <test-method signature="roomcount()[pri:3, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:53:11 IST" name="roomcount" finished-at="2025-10-08T16:53:16 IST" duration-ms="5064" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hotelcount -->
-        <test-method signature="selecthotel()[pri:4, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:38:31 IST" name="selecthotel" finished-at="2025-07-08T07:39:12 IST" duration-ms="40583" status="PASS">
+        </test-method> <!-- roomcount -->
+        <test-method signature="lowestroomselection()[pri:4, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:53:21 IST" name="lowestroomselection" finished-at="2025-10-08T16:53:21 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selecthotel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.SearchResultPageTest@27f981c6]" started-at="2025-07-08T07:39:12 IST" name="tearDown" finished-at="2025-07-08T07:39:13 IST" duration-ms="977" status="PASS">
+        </test-method> <!-- lowestroomselection -->
+        <test-method signature="hotelbooking()[pri:5, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:53:24 IST" name="hotelbooking" finished-at="2025-10-08T16:53:54 IST" duration-ms="30195" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\frames.js:1057:23)
+    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//input[@id='items_0_adults_0_firstname']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\frames.js:1057:23)
+    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//input[@id='items_0_adults_0_firstname']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+at com.microsoft.playwright.impl.PageImpl.lambda$fill$28(PageImpl.java:761)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:760)
+at com.microsoft.playwright.Page.fill(Page.java:4706)
+at com.qa.neworbit.pages.HotelAlldetailPage.booking(HotelAlldetailPage.java:103)
+at com.qa.neworbit.tests.HotelAlldetailPageTest.hotelbooking(HotelAlldetailPageTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\frames.js:1057:23)
+    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//input[@id='items_0_adults_0_firstname']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotelbooking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@602e0143]" started-at="2025-10-08T16:53:55 IST" name="tearDown" finished-at="2025-10-08T16:53:55 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.neworbit.tests.SearchResultPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.neworbit.tests.HotelAlldetailPageTest -->
+    </test> <!-- new orbit hotel booking Test -->
+  </suite> <!-- MyNewOrbitTestSuit -->
 </testng-results>

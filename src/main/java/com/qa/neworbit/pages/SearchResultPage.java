@@ -7,12 +7,9 @@ public class SearchResultPage {
 
 	//1. locators
 	
-	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700']";
+	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700'][1]";
 	
-	//private String filter ="(//input[@type='search'])[3]";
-	//private String filteroption = "//div[@title='Refundable']//div";
-	
-	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[1]";
+	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[2]";
 
 	
 	private String hotelname = "(//div[@class='booking-name-type ant-flex css-1v5z42l'])[1]/span";
@@ -50,10 +47,9 @@ public class SearchResultPage {
 		System.out.println("Enter into hotelselect");
 		page.click(summary);
 		String noofhotels = page.locator(summary).first().textContent();
-		System.out.println("we found " + noofhotels + "hotels in search, now arranging low to high");
+		System.out.println("we found " + noofhotels + "hotels in search");
 		if(noofhotels!=null) {
 			System.out.println("hotels available");
-			System.out.println("commented");
 //			page.click(filter);
 //			System.out.println("Filter clicked");
 //			page.locator(filteroption).first().click();
@@ -73,6 +69,7 @@ public class SearchResultPage {
 				System.out.println("inside the clause");
 				page.click(fhotel);
 				System.out.println("click on first hotel");
+				page.waitForTimeout(20000);
 			});
 			page1.waitForTimeout(20000);
 			System.out.println("waiting for noofrooms available");
@@ -88,33 +85,29 @@ public class SearchResultPage {
 	}
 	
 	public HotelAlldetailPage navigatetohotelalldetail() {
-		
-		//page.click(summary);
+		System.out.println("entered into navigate to hotelalldetail");
+		page.waitForTimeout(20000);
+		page.click(summary);
 		String noofhotels = page.locator(summary).first().textContent();
-		System.out.println("we found " + noofhotels + "hotels in search, now arranging low to high");
+		System.out.println("we found " + noofhotels + "hotels in search");
 		if(noofhotels!=null) {
 			System.out.println("hotels available");
 			//page.click(filter);
 			//page.locator(filteroption).first().click();
-			String hname = page.locator(hotelname).first().textContent();
-			System.out.println("Selected hotel name : " + hname);
-			String hprice = page.locator(initprice).first().textContent();
-			System.out.println("Initial price : " + hprice );
-			String hcurrency = page.locator(currency).first().textContent();
-			System.out.println("Selected hotel price : " + hcurrency + " " + hprice);
 			
 			//new popup opened
 			
 			Page page1 = page.waitForPopup(() -> {
 				
-				page.click(showrates);
+				page.click(fhotel);
 			});
 			
-			page1.click(noofroom);
-			String availroom = page1.innerText(noofroom);
-			System.out.println("No of rooms available : " + availroom);
-			page1.waitForTimeout(2000);
-			
+			page1.waitForTimeout(20000);
+//			System.out.println("waiting for noofrooms available");
+//			page1.click(noofroom);
+//			String availroom = page1.innerText(noofroom);
+//			System.out.println("No of rooms available : " + availroom);
+//			page1.waitForTimeout(5000);
 			return new HotelAlldetailPage(page1) ;
 		}
 		else {

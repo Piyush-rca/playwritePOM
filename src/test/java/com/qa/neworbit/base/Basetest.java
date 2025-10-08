@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import com.microsoft.playwright.Page;
 import com.qa.neworbit.factory.PlaywrightFactory;
 import com.qa.neworbit.pages.DashboardPage;
+import com.qa.neworbit.pages.HotelAlldetailPage;
 import com.qa.neworbit.pages.SearchResultPage;
 import com.qa.neworbit.pages.loginPage;
 
@@ -20,6 +21,7 @@ public class Basetest {
 	protected loginPage loginpage;
 	protected DashboardPage dashboardpage;
 	protected SearchResultPage searchresultpage;
+	protected HotelAlldetailPage hotelalldetailpage;
 	
 	@BeforeTest
 	public void setup() {

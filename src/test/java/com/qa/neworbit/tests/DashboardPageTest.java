@@ -9,7 +9,7 @@ import com.qa.neworbit.constants.AppConstans;
 public class DashboardPageTest extends Basetest{
 	
 	@Test(priority = 1)
-	public void NavigateToDashboardPage() {
+	public void NavigateToDashboardPage() throws InterruptedException {
 		dashboardpage = loginpage.navigatetodashboard(prop.getProperty("email"), prop.getProperty("password"));
 	}
 	
