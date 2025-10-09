@@ -9,22 +9,322 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MyNewOrbitTestSuit</th></tr>
-<tr><td><a href="#t0">new orbit hotel booking Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">199,571</td><td></td><td></td></tr>
+<tr><td><a href="#t0">new orbit hotel booking Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">83,091</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyNewOrbitTestSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">new orbit hotel booking Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.neworbit.tests.HotelAlldetailPageTest</td><td><a href="#m0">hotelbooking</a></td><td rowspan="1">1759922604151</td><td rowspan="1">30195</td></tr><tr><th colspan="4">new orbit hotel booking Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.neworbit.tests.HotelAlldetailPageTest</td><td><a href="#m1">lowestroomselection</a></td><td rowspan="1">1759922601394</td><td rowspan="1">127</td></tr><tr class="passedeven"><td><a href="#m2">navigate</a></td><td rowspan="1">1759922455389</td><td rowspan="1">108937</td></tr><tr class="passedeven"><td><a href="#m3">roomcount</a></td><td rowspan="1">1759922591881</td><td rowspan="1">5064</td></tr><tr class="passedeven"><td><a href="#m4">titleverify</a></td><td rowspan="1">1759922588768</td><td rowspan="1">12</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyNewOrbitTestSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">new orbit hotel booking Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">com.qa.neworbit.tests.HotelAlldetailPageTest</td><td><a href="#m0">hotelbooking</a></td><td rowspan="1">1759996334812</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">lowestroomselection</a></td><td rowspan="1">1759996333559</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">navigate</a></td><td rowspan="1">1759996267019</td><td rowspan="1">61854</td></tr><tr class="failedeven"><td><a href="#m3">roomcount</a></td><td rowspan="1">1759996332191</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m4">titleverify</a></td><td rowspan="1">1759996330948</td><td rowspan="1">6</td></tr></tbody>
 </table>
-<h2>new orbit hotel booking Test</h2><h3 id="m0">com.qa.neworbit.tests.HotelAlldetailPageTest#hotelbooking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+<h2>new orbit hotel booking Test</h2><h3 id="m0">com.qa.neworbit.tests.HotelAlldetailPageTest#hotelbooking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.neworbit.pages.HotelAlldetailPage.booking()&quot; because &quot;this.hotelalldetailpage&quot; is null
+	at com.qa.neworbit.tests.HotelAlldetailPageTest.hotelbooking(HotelAlldetailPageTest.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.neworbit.tests.HotelAlldetailPageTest#lowestroomselection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.neworbit.pages.HotelAlldetailPage.roomSelect()&quot; because &quot;this.hotelalldetailpage&quot; is null
+	at com.qa.neworbit.tests.HotelAlldetailPageTest.lowestroomselection(HotelAlldetailPageTest.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.neworbit.tests.HotelAlldetailPageTest#navigate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\frames.js:1057:23)
-    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:361:39)
+    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\frames.js:1057:23)
+    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator(&quot;//input[@id=&apos;items_0_adults_0_firstname&apos;]&quot;)
+- waiting for locator(&quot;xpath=(//input[@class=&apos;ant-select-selection-search-input&apos;])[1]&quot;)
+-   locator resolved to &lt;input readonly value=&quot;&quot; type=&quot;search&quot; role=&quot;combobox&quot; id=&quot;rc_select_0&quot; unselectable=&quot;on&quot; autocomplete=&quot;off&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; aria-autocomplete=&quot;list&quot; aria-owns=&quot;rc_select_0_list&quot; aria-controls=&quot;rc_select_0_list&quot; class=&quot;ant-select-selection-search-input&quot;/&gt;
+-   fill(&quot;Dubai&quot;)
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #1
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #2
+-   waiting 20ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #3
+-   waiting 100ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #4
+-   waiting 100ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #5
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #6
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #7
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #8
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #9
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #10
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #11
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #12
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #13
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #14
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #15
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #16
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #17
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #18
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #19
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #20
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #21
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #22
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #23
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #24
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #25
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #26
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #27
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #28
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #29
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #30
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #31
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #32
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #33
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #34
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #35
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #36
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #37
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #38
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #39
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #40
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #41
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #42
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #43
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #44
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #45
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #46
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #47
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #48
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #49
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #50
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #51
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #52
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #53
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #54
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #55
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #56
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #57
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #58
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #59
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #60
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #61
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #62
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #63
+-   waiting 500ms
 
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
@@ -38,8 +338,8 @@ Call log:
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
 	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:760)
 	at com.microsoft.playwright.Page.fill(Page.java:4706)
-	at com.qa.neworbit.pages.HotelAlldetailPage.booking(HotelAlldetailPage.java:103)
-	at com.qa.neworbit.tests.HotelAlldetailPageTest.hotelbooking(HotelAlldetailPageTest.java:42)
+	at com.qa.neworbit.pages.DashboardPage.navigatetosearchresult(DashboardPage.java:94)
+	at com.qa.neworbit.tests.HotelAlldetailPageTest.navigate(HotelAlldetailPageTest.java:14)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -64,23 +364,319 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\progress.js:78:26)
-    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\frames.js:1057:23)
-    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9449117352995909255\package\lib\server\dispatchers\dispatcher.js:361:39)
+    at ProgressController.run (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\progress.js:78:26)
+    at Frame.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\frames.js:1057:23)
+    at FrameDispatcher.fill (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-14620199513216355601\package\lib\server\dispatchers\dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator(&quot;//input[@id=&apos;items_0_adults_0_firstname&apos;]&quot;)
+- waiting for locator(&quot;xpath=(//input[@class=&apos;ant-select-selection-search-input&apos;])[1]&quot;)
+-   locator resolved to &lt;input readonly value=&quot;&quot; type=&quot;search&quot; role=&quot;combobox&quot; id=&quot;rc_select_0&quot; unselectable=&quot;on&quot; autocomplete=&quot;off&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot; aria-autocomplete=&quot;list&quot; aria-owns=&quot;rc_select_0_list&quot; aria-controls=&quot;rc_select_0_list&quot; class=&quot;ant-select-selection-search-input&quot;/&gt;
+-   fill(&quot;Dubai&quot;)
+- attempting fill action
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #1
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #2
+-   waiting 20ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #3
+-   waiting 100ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #4
+-   waiting 100ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #5
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #6
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #7
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #8
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #9
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #10
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #11
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #12
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #13
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #14
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #15
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #16
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #17
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #18
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #19
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #20
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #21
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #22
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #23
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #24
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #25
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #26
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #27
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #28
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #29
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #30
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #31
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #32
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #33
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #34
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #35
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #36
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #37
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #38
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #39
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #40
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #41
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #42
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #43
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #44
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #45
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #46
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #47
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #48
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #49
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #50
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #51
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #52
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #53
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #54
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #55
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #56
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #57
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #58
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #59
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #60
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #61
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #62
+-   waiting 500ms
+-   waiting for element to be visible, enabled and editable
+-   element is not editable
+- retrying fill action, attempt #63
+-   waiting 500ms
 
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
 	... 32 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.neworbit.tests.HotelAlldetailPageTest#lowestroomselection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.neworbit.tests.HotelAlldetailPageTest#navigate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.neworbit.tests.HotelAlldetailPageTest#roomcount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.neworbit.tests.HotelAlldetailPageTest#titleverify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.neworbit.tests.HotelAlldetailPageTest#roomcount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.neworbit.pages.HotelAlldetailPage.NoOfRoomsCount()&quot; because &quot;this.hotelalldetailpage&quot; is null
+	at com.qa.neworbit.tests.HotelAlldetailPageTest.roomcount(HotelAlldetailPageTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.neworbit.tests.HotelAlldetailPageTest#titleverify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.qa.neworbit.pages.HotelAlldetailPage.HotelAllDetailTitle()&quot; because &quot;this.hotelalldetailpage&quot; is null
+	at com.qa.neworbit.tests.HotelAlldetailPageTest.titleverify(HotelAlldetailPageTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
