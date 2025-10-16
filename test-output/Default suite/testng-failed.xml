@@ -6,8 +6,8 @@
       <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
         <methods>
           <include name="roomcount"/>
-          <include name="hotelbooking"/>
           <include name="navigate"/>
+          <include name="hotelbooking"/>
           <include name="titleverify"/>
           <include name="tearDown"/>
           <include name="lowestroomselection"/>
