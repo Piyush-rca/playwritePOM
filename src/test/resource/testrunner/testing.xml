@@ -8,28 +8,6 @@
 
 	</listeners>
 
-<!--
-   <test name="New orbit login Test">      
-        <classes>  
-            <class name="com.qa.neworbit.tests.LoginPageTest"/>
-        </classes>        
-    </test>
-    
-    <test name="new orbit dashboard Test">      
-        <classes>  
-            <class name="com.qa.neworbit.tests.DashboardPageTest"/>
-        </classes>        
-    </test>
-    
-    
-    
-    <test name="new orbit search Results Test">      
-        <classes>  
-            <class name="com.qa.neworbit.tests.SearchResultPageTest"/>
-        </classes>        
-    </test>
-
-	-->
 	
 	<test name="new orbit hotel booking Test">      
         <classes>  

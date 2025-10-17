@@ -1,268 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-17T13:42:02 IST" name="Default suite" finished-at="2025-10-17T13:42:32 IST" duration-ms="30537">
+  <suite started-at="2025-10-17T14:15:40 IST" name="MyNewOrbitTestSuit" finished-at="2025-10-17T14:18:36 IST" duration-ms="175690">
     <groups>
     </groups>
-    <test started-at="2025-10-17T13:42:02 IST" name="Default test" finished-at="2025-10-17T13:42:32 IST" duration-ms="30537">
+    <test started-at="2025-10-17T14:15:40 IST" name="new orbit hotel booking Test" finished-at="2025-10-17T14:18:36 IST" duration-ms="175690">
       <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:02 IST" name="setup" finished-at="2025-10-17T13:42:19 IST" duration-ms="17481" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:15:40 IST" name="setup" finished-at="2025-10-17T14:15:56 IST" duration-ms="15952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:19 IST" name="navigate" finished-at="2025-10-17T13:42:31 IST" duration-ms="11682" status="FAIL">
-          <exception class="com.microsoft.playwright.impl.TargetClosedError">
-            <message>
-              <![CDATA[Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\stackTrace.js:49:17)
-    at LongStandingScope._race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:361:39)
-}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\stackTrace.js:49:17)
-    at LongStandingScope._race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-at com.microsoft.playwright.impl.FrameImpl.waitForTimeoutImpl(FrameImpl.java:1076)
-at com.microsoft.playwright.impl.PageImpl.lambda$waitForTimeout$95(PageImpl.java:1567)
-at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1567)
-at com.qa.neworbit.pages.loginPage.navigatetodashboard(loginPage.java:132)
-at com.qa.neworbit.tests.HotelAlldetailPageTest.navigate(HotelAlldetailPageTest.java:13)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\stackTrace.js:49:17)
-    at LongStandingScope._race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\GRN\AppData\Local\Temp\playwright-java-9033492514925552059\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:15:56 IST" name="navigate" finished-at="2025-10-17T14:17:37 IST" duration-ms="101100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:31 IST" name="titleverify" finished-at="2025-10-17T13:42:31 IST" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.HotelAllDetailTitle()" because "this.hotelalldetailpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.HotelAllDetailTitle()" because "this.hotelalldetailpage" is null
-at com.qa.neworbit.tests.HotelAlldetailPageTest.titleverify(HotelAlldetailPageTest.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:17:38 IST" name="titleverify" finished-at="2025-10-17T14:17:38 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleverify -->
-        <test-method signature="roomcount()[pri:3, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:31 IST" name="roomcount" finished-at="2025-10-17T13:42:31 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.NoOfRoomsCount()" because "this.hotelalldetailpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.NoOfRoomsCount()" because "this.hotelalldetailpage" is null
-at com.qa.neworbit.tests.HotelAlldetailPageTest.roomcount(HotelAlldetailPageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="roomcount()[pri:3, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:17:38 IST" name="roomcount" finished-at="2025-10-17T14:17:43 IST" duration-ms="5059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roomcount -->
-        <test-method signature="lowestroomselection()[pri:4, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:31 IST" name="lowestroomselection" finished-at="2025-10-17T13:42:31 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.roomSelect()" because "this.hotelalldetailpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.roomSelect()" because "this.hotelalldetailpage" is null
-at com.qa.neworbit.tests.HotelAlldetailPageTest.lowestroomselection(HotelAlldetailPageTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="lowestroomselection()[pri:4, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:17:43 IST" name="lowestroomselection" finished-at="2025-10-17T14:17:43 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowestroomselection -->
-        <test-method signature="hotelbooking()[pri:5, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:31 IST" name="hotelbooking" finished-at="2025-10-17T13:42:31 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.booking()" because "this.hotelalldetailpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.neworbit.pages.HotelAlldetailPage.booking()" because "this.hotelalldetailpage" is null
-at com.qa.neworbit.tests.HotelAlldetailPageTest.hotelbooking(HotelAlldetailPageTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="hotelbooking()[pri:5, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:17:43 IST" name="hotelbooking" finished-at="2025-10-17T14:18:36 IST" duration-ms="52873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotelbooking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-17T13:42:31 IST" name="tearDown" finished-at="2025-10-17T13:42:32 IST" duration-ms="1300" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@1be2019a]" started-at="2025-10-17T14:18:36 IST" name="tearDown" finished-at="2025-10-17T14:18:36 IST" duration-ms="479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.neworbit.tests.HotelAlldetailPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- new orbit hotel booking Test -->
+  </suite> <!-- MyNewOrbitTestSuit -->
 </testng-results>

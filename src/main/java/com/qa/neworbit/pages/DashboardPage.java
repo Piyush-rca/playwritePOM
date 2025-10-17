@@ -83,6 +83,7 @@ public class DashboardPage {
 	
 	public SearchResultPage navigatetosearchresult(String City, String day, String month, String Year, String Nationality) {
 		
+		System.out.println("on dashboard page");
 		datetoclick = day;
 		date = "//td[@class='ant-picker-cell ant-picker-cell-in-view']/div[text()='" + datetoclick + "']";
 		System.out.println("Day want to search :" + datetoclick);
@@ -112,6 +113,7 @@ public class DashboardPage {
 //		page.getByText(Nationality, new Page.GetByTextOptions().setExact(true)).click();
 
 		page.click(searchbutton);		
+		System.out.println("Search button clicked");
 		return new SearchResultPage(page);
 	}
 	

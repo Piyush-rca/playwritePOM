@@ -48,6 +48,7 @@ public class loginPage {
 		page.fill(email, UserName);
 		page.fill(passwrd, Password);
 		page.click(login);
+		System.out.println("login button clicked");
 		
 		System.out.println("step1");
 		//OTP functionality automate
@@ -123,12 +124,14 @@ public class loginPage {
 	}
 	
 	public DashboardPage navigatetodashboard(String UserName, String Password) throws InterruptedException{
+			System.out.println("on login page");
 			System.out.println("Login Credential: " + UserName + " : " + Password);
 			//page.click(login);
 			page.fill(email, UserName);
 			//page.click(passwrd);
 			page.fill(passwrd, Password);
 			page.click(login);
+			System.out.println("login button clicked");
 			page.waitForTimeout(30000);
 			
 //			System.out.println("step1");
