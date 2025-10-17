@@ -94,7 +94,8 @@ public class ExtentReportListener implements ITestListener	{
 		public synchronized void onTestSuccess(ITestResult result) {
 			System.out.println((result.getMethod().getMethodName() + " passed!"));
 			test.get().pass("Test passed");
-			test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(),result.getMethod().getMethodName()).build());
+			//this is to stop taking the ss
+			//test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(),result.getMethod().getMethodName()).build());
 			test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 		}
 

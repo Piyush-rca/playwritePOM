@@ -21,7 +21,7 @@ public class HotelAlldetailPage {
 	private String firstname = "//input[@id='items_0_adults_0_firstname']";
 	private String lastname = "//input[@id='items_0_adults_0_lastname']";
 	private String panno = "//input[@id='items_0_adults_0_pan']";
-	private String validate = "//button[@class='ant-btn css-1odpy5d ant-btn-link ant-btn-color-link ant-btn-variant-link validate-pan-btn display-inline-block grn-common-btn']";
+	private String validate = "//button[contains(@class,'validate-pan-btn')]";
 	
 	private String remarkcb = "(//input[@class='ant-checkbox-input'])[2]";
 	private String cpcb = "(//input[@class='ant-checkbox-input'])[3]";
@@ -33,7 +33,7 @@ public class HotelAlldetailPage {
 	private String number = "//input[@id='econtactnumber']";
 	
 	
-	private String submit = "//button[@class='ant-btn css-1odpy5d ant-btn-primary ant-btn-color-primary ant-btn-variant-solid undefined grn-common-btn']";
+	private String submit = "//span[text()=('Submit For Confirmation')]";
 	private String status = "//div[@class='text-text-secondary']";
 	private String bid = "//span[@class='bid msgbid']";
 	
