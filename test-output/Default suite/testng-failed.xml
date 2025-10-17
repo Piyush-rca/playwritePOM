@@ -5,8 +5,12 @@
     <classes>
       <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
         <methods>
+          <include name="roomcount"/>
           <include name="hotelbooking"/>
+          <include name="navigate"/>
+          <include name="titleverify"/>
           <include name="tearDown"/>
+          <include name="lowestroomselection"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.neworbit.tests.HotelAlldetailPageTest -->
