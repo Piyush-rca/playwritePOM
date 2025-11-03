@@ -1,6 +1,8 @@
 package com.qa.neworbit.pages;
 
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Properties;
 
 import org.jsoup.Jsoup;
@@ -25,6 +27,8 @@ public class loginPage {
 	String email = "//input[@id='login_form_email']";
 	String passwrd = "//input[@id='login_form_password']";
 	String login = "//button[span[text()='Login']]";
+	
+	String otpContainer = "//div[@class='otp-login-container']";
 			
 //	String email = "//input[@name='uidField']";
 //	String passwrd = "//input[@id='ak-stage-password-input']";;
@@ -123,8 +127,16 @@ public class loginPage {
 		}
 	}
 	
-	public DashboardPage navigatetodashboard(String UserName, String Password) throws InterruptedException{
+	public DashboardPage navigatetodashboard(String UserName, String Password) throws InterruptedException, UnknownHostException{
 			System.out.println("on login page");
+			
+			InetAddress inetAddress = InetAddress.getLocalHost();
+            System.out.println("======================================");
+            System.out.println("Test Execution Environment Details:");
+            System.out.println("Hostname: " + inetAddress.getHostName());
+            System.out.println("IP Address: " + inetAddress.getHostAddress());
+            System.out.println("======================================");
+			
 			System.out.println("Login Credential: " + UserName + " : " + Password);
 			//page.click(login);
 			page.fill(email, UserName);
@@ -133,6 +145,16 @@ public class loginPage {
 			page.click(login);
 			System.out.println("login button clicked");
 			page.waitForTimeout(30000);
+			
+			if (page.isVisible(otpContainer)) {
+				System.out.println("Asking for otp to login..");
+				return new DashboardPage(page);
+			}
+			else {
+				System.out.println("Logged in without OTP");
+				return new DashboardPage(page);
+			}
+			
 			
 //			System.out.println("step1");
 //			//OTP functionality automate
@@ -197,6 +219,6 @@ public class loginPage {
 //			        otpInputs.nth(i).fill(String.valueOf(otpDigits[i]));
 //			    }
 						
-			return new DashboardPage(page); 
+			//return new DashboardPage(page); 
 	}
 }

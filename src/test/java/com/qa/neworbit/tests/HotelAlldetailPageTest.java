@@ -1,5 +1,7 @@
 package com.qa.neworbit.tests;
 
+import java.net.UnknownHostException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +11,7 @@ import com.qa.neworbit.constants.AppConstans;
 public class HotelAlldetailPageTest extends Basetest{
 	
 	@Test(priority=1)
-	public void navigate() throws InterruptedException {
+	public void navigate() throws InterruptedException, UnknownHostException {
 		dashboardpage = loginpage.navigatetodashboard(prop.getProperty("email"), prop.getProperty("password"));
 		searchresultpage = dashboardpage.navigatetosearchresult(prop.getProperty("city"), prop.getProperty("day"), prop.getProperty("month") ,prop.getProperty("year"), prop.getProperty("nationality"));
 		hotelalldetailpage = searchresultpage.navigatetohotelalldetail();

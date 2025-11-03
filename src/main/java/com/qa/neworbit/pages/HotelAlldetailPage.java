@@ -95,6 +95,7 @@ public class HotelAlldetailPage {
 
         String firstName = faker.name().firstName();
         String lastName = faker.name().lastName();
+        page.waitForTimeout(10000);
         
         System.out.println("First Name: " + firstName);
         System.out.println("Last Name: " + lastName);
