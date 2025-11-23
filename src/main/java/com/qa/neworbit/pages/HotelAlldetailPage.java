@@ -35,7 +35,7 @@ public class HotelAlldetailPage {
 	
 	private String submit = "//span[text()=('Submit For Confirmation')]";
 	private String status = "//div[@class='text-text-secondary']";
-	private String bid = "//span[@class='bid msgbid']";
+	private String bid = "//span[@class='cursor-pointer bid msgbid']";
 	
 	
 	
@@ -127,3 +127,4 @@ public class HotelAlldetailPage {
 	}
 		
 }
+
