@@ -9,7 +9,7 @@ public class SearchResultPage {
 	
 	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700'][1]";
 	
-	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[2]";
+	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[6]";
 
 	
 	private String hotelname = "(//div[@class='booking-name-type ant-flex css-1v5z42l'])[1]/span";
@@ -116,3 +116,4 @@ public class SearchResultPage {
 		
 	}
 }
+
