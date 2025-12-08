@@ -9,7 +9,7 @@ public class SearchResultPage {
 	
 	private String summary = "//span[@class='output-text-notes']/span[@class='f-w-700'][1]";
 	
-	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[2]";
+	private String fhotel = "(//button[@type='button'][span[text()='SHOW ROOMS']])[6]";
 
 	
 	private String hotelname = "(//div[@class='booking-name-type ant-flex css-1v5z42l'])[1]/span";
@@ -18,6 +18,10 @@ public class SearchResultPage {
 	private String showrates = "(//div[@class='ant-col right-details-section css-1v5z42l'])[1]//button[@class='ant-btn css-1v5z42l ant-btn-primary ant-btn-color-primary ant-btn-variant-solid grn-booking-custom-pink-btn grn-common-btn']";
 	//private String noofroom ="//div[@class='information ant-flex css-1v613y0']//span[@class='ant-typography css-1v613y0']//span";
 	private String noofroom = "//div[contains(@class, 'information')]//span//span";
+	
+	private String filter ="(//span[@class=\"ant-select-selection-search\"])[6]";
+	private String fselect = "//div[contains(@class,'ant-select-item-option-content') and contains(.,'Price (Low to High)')]";
+	
 	
 	//2. creating constructor
 	
@@ -92,23 +96,27 @@ public class SearchResultPage {
 		System.out.println("we found " + noofhotels + "hotels in search");
 		if(noofhotels!=null) {
 			System.out.println("hotels available");
-			//page.click(filter);
+			page.click(filter);
+			System.out.println("filter outer clicked on search result page");
+			page.click(fselect);
+			System.out.println("first filter clicked");
 			//page.locator(filteroption).first().click();
 			
 			//new popup opened
 			
-			Page page1 = page.waitForPopup(() -> {
-				
+			//Page newtab = page.waitForPopup(() -> {      this is the previous code that works fine
+			Page newtab = page.context().waitForPage(() -> {
+			
 				page.click(fhotel);
 			});
 			
-			page1.waitForTimeout(20000);
+			newtab.waitForTimeout(20000);
 //			System.out.println("waiting for noofrooms available");
 //			page1.click(noofroom);
 //			String availroom = page1.innerText(noofroom);
 //			System.out.println("No of rooms available : " + availroom);
 //			page1.waitForTimeout(5000);
-			return new HotelAlldetailPage(page1) ;
+			return new HotelAlldetailPage(newtab) ;
 		}
 		else {
 			return new HotelAlldetailPage(page);

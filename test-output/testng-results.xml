@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-31T16:00:21 IST" name="Default suite" finished-at="2025-10-31T16:03:40 IST" duration-ms="199840">
+  <suite started-at="2025-12-08T21:40:56 IST" name="Default suite" finished-at="2025-12-08T21:47:32 IST" duration-ms="395835">
     <groups>
     </groups>
-    <test started-at="2025-10-31T16:00:21 IST" name="Default test" finished-at="2025-10-31T16:03:40 IST" duration-ms="199840">
+    <test started-at="2025-12-08T21:40:56 IST" name="Default test" finished-at="2025-12-08T21:47:32 IST" duration-ms="395835">
       <class name="com.qa.neworbit.tests.HotelAlldetailPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:00:21 IST" name="setup" finished-at="2025-10-31T16:00:51 IST" duration-ms="30777" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:40:56 IST" name="setup" finished-at="2025-12-08T21:43:40 IST" duration-ms="164350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:00:51 IST" name="navigate" finished-at="2025-10-31T16:02:59 IST" duration-ms="127165" status="PASS">
+        <test-method signature="navigate()[pri:1, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:43:41 IST" name="navigate" finished-at="2025-12-08T21:46:09 IST" duration-ms="147884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:02:59 IST" name="titleverify" finished-at="2025-10-31T16:02:59 IST" duration-ms="10" status="PASS">
+        <test-method signature="titleverify()[pri:2, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:46:09 IST" name="titleverify" finished-at="2025-12-08T21:46:09 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleverify -->
-        <test-method signature="roomcount()[pri:3, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:02:59 IST" name="roomcount" finished-at="2025-10-31T16:03:04 IST" duration-ms="5064" status="PASS">
+        <test-method signature="roomcount()[pri:3, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:46:09 IST" name="roomcount" finished-at="2025-12-08T21:46:14 IST" duration-ms="5067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- roomcount -->
-        <test-method signature="lowestroomselection()[pri:4, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:03:04 IST" name="lowestroomselection" finished-at="2025-10-31T16:03:04 IST" duration-ms="120" status="PASS">
+        <test-method signature="lowestroomselection()[pri:4, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:46:14 IST" name="lowestroomselection" finished-at="2025-12-08T21:46:34 IST" duration-ms="20733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowestroomselection -->
-        <test-method signature="hotelbooking()[pri:5, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:03:04 IST" name="hotelbooking" finished-at="2025-10-31T16:03:40 IST" duration-ms="36064" status="PASS">
+        <test-method signature="hotelbooking()[pri:5, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:46:34 IST" name="hotelbooking" finished-at="2025-12-08T21:47:31 IST" duration-ms="56666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotelbooking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-10-31T16:03:40 IST" name="tearDown" finished-at="2025-10-31T16:03:40 IST" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.neworbit.tests.HotelAlldetailPageTest@55b699ef]" started-at="2025-12-08T21:47:31 IST" name="tearDown" finished-at="2025-12-08T21:47:32 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

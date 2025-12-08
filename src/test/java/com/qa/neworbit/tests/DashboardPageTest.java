@@ -1,5 +1,7 @@
 package com.qa.neworbit.tests;
 
+import java.net.UnknownHostException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +11,7 @@ import com.qa.neworbit.constants.AppConstans;
 public class DashboardPageTest extends Basetest{
 	
 	@Test(priority = 1)
-	public void NavigateToDashboardPage() throws InterruptedException {
+	public void NavigateToDashboardPage() throws InterruptedException, UnknownHostException {
 		dashboardpage = loginpage.navigatetodashboard(prop.getProperty("email"), prop.getProperty("password"));
 	}
 	

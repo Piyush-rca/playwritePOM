@@ -11,8 +11,11 @@ public class HotelAlldetailPage {
 	private String noofroom = "//div[contains(@class, 'information')]//span//span";
 	
 //	private String policytype = ""; 
-	private String policyfilter ="(//input[@type='search'])[3]";
+	private String policyfilter ="//span[@title='Refund Policy : All']";
 	private String policyfilteroption = "//div[@title='Refundable']//div";
+	
+	private String recordstatus = "//div[@class='f-w-700 f-20 text-grey m-y-4']";
+	
 	private String roomname = "//li[@class='ant-list-item'][1]/div/div/div/div[1]/div/div[1]/span[1]";
 	private String mealplan = "//li[@class='ant-list-item'][1]/div/div/div/div[1]/div/div[1]/span[2]";
 	private String ratestype = "//li[@class='ant-list-item'][1]/div/div/div/div[1]/div/div[2]/span[1]";
@@ -35,7 +38,7 @@ public class HotelAlldetailPage {
 	
 	private String submit = "//span[text()=('Submit For Confirmation')]";
 	private String status = "//div[@class='text-text-secondary']";
-	private String bid = "//span[@class='bid msgbid']";
+	private String bid = "//span[@class='cursor-pointer bid msgbid']";
 	
 	
 	
@@ -64,12 +67,30 @@ public class HotelAlldetailPage {
 		return availroom;
 	}
 	
+	public void closeTab() {
+        page.close();
+    }
+	
 	public String roomSelect() {
 		
 		//page.waitForTimeout(20000);
-		//page.click(policyfilter);
-		//page.click(policyfilteroption);
-		//page.waitForTimeout(20000);
+		page.click(policyfilter);
+		System.out.println("policy filter clicked");
+		page.click(policyfilteroption);
+		System.out.println("refundable cliked");
+		page.waitForTimeout(20000);
+		
+		/// logic to validate options available or not
+		if (page.isVisible(recordstatus)){
+		System.out.println("entered into the if condition");
+		String avastatus = page.innerText(recordstatus);
+		System.out.println("records are available " + avastatus);
+		page.close();
+		page.waitForTimeout(10000);
+		System.out.println("tab is closed");
+		}
+		
+		
 		String room = page.innerText(roomname);
 		System.out.println("Selected room name: " + room);
 		String meal = page.innerText(mealplan);
@@ -116,6 +137,7 @@ public class HotelAlldetailPage {
 		page.fill(agentref, "piyush");
 		page.fill(number, "9876543210");
 		page.click(submit);
+		System.out.println("Submit button clicked");
 		page.waitForTimeout(20000);
 		
 		String bookingid = page.innerText(bid);
