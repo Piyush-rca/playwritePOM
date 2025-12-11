@@ -1,1 +1,27 @@
+name: Run Playwright Tests Every 15 Minutes
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # Runs every 15 minutes
+  workflow_dispatch:          # Manual run option
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: temurin
+
+      - name: Install dependencies
+        run: mvn install -DskipTests=true
+
+      - name: Run tests
+        run: mvn test
 
