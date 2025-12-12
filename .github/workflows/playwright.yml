@@ -1,4 +1,4 @@
-name: Run Playwright Tests Every 15 Minutes
+name: Run Playwright Tests for hotel booking.
 
 on:
   schedule:
