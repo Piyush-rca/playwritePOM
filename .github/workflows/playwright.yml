@@ -1,4 +1,4 @@
-name: Run Playwright Tests for hotel booking.
+name: Run Playwright Tests for hotel booking Search to book to cancel.
 
 on:
   schedule:
