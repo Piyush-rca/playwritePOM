@@ -73,7 +73,7 @@ public class PlaywrightFactory {
 			
 		case "chrome":
 			//browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
-			tlBrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
+			tlBrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(true)));
 			break;
 			
 			
@@ -127,5 +127,6 @@ public class PlaywrightFactory {
 		}
 		
 }
+
 
 
