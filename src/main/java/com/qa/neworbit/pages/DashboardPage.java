@@ -18,7 +18,8 @@ public class DashboardPage {
 	private String targetMonth;
 	private String targetYear;
 	
-	private String destination = "(//input[@class='ant-select-selection-search-input'])[1]";
+	//private String destination = "(//input[@class='ant-select-selection-search-input'])[1]";
+    private String destination = "(//div[contains(@class,'ant-select-selector')])[1]";
 	
 	private String destmatch = "//div[@class='ant-select-item ant-select-item-option']";
 	private String checkin = "//input[@id='checkin']";
@@ -201,3 +202,4 @@ public class DashboardPage {
 	
 
 }
+
