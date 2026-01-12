@@ -68,8 +68,13 @@ public class DashboardPage {
 		System.out.println("targetYear " + targetYear);
 		
 		date = "//td[@class='ant-picker-cell ant-picker-cell-in-view']/div[text()='" + targetDay + "']";
+
+
+		page.click(destination, new Page.ClickOptions().setForce(true));
+		//page.click(destination);
+		page.keyboard().type(City);
 		
-		page.fill(destination, City);
+		//page.fill(destination, City);
 		page.locator(destmatch).first().click();
 		System.out.println("Date want to search :" + date);
 		page.click(checkin);
@@ -146,8 +151,10 @@ public class DashboardPage {
 		
 		date = "//td[@class='ant-picker-cell ant-picker-cell-in-view']/div[text()='" + targetDay + "']";
 
-		page.click(destination);
-        page.keyboard().type(City);
+		page.click(destination, new Page.ClickOptions().setForce(true));
+		//page.click(destination);
+		page.keyboard().type(City);
+		
 		//page.fill(destination, City);
 		page.locator(destmatch).first().click();
 		System.out.println("Date want to search :" + date);
@@ -202,4 +209,5 @@ public class DashboardPage {
 	
 
 }
+
 
