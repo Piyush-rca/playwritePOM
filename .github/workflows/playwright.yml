@@ -1,8 +1,8 @@
 name: Run Playwright Tests for hotel booking Search to book to cancel.
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
+  # schedule:
+  #  - cron: "*/15 * * * *"
   workflow_dispatch:
 
 jobs:
